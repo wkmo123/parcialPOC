@@ -4,32 +4,43 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Parcial POC</title>
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     </head>
     <body>
-        <h1>Hello World!</h1>
-         <form action="control" method="POST">
-            <ul>
-                <li>
-                    <label>Nombres: </label>
-                    <input type="text" name="txt_nombres" required="true">
-                </li>
-                <li>
-                    <label>Apellidos: </label>           
-                    <input type="text" name="txt_apellidos" required="true">
-                </li>
-                <li>
-                    <label>Correo:</label>
-                    <input type="email" name="txt_correo" required="true">
-                </li>
-                <li>
-                    <label>Telefono:</label>
-                    <input type="number" name="txt_numero" required="true">
-                </li>
-            </ul>
-            </br>
-            <center>
+        <div class="conteiner-card">
+            <div class="card">
+                <div class="logo">
+                    <img src="recursos\logo.png" alt="logo">
+                </div>
+            </div>
+            <div class="header-card">
+                <h1>Registro</h1>
+                <div>Por favor ingresa tus datos</div>
+            </div>
+            <form class="card-form" action="control" method="POST">
+                <div class="form-item">
+                    <span class="form-item-icon material-symbols-rounded">person</span>
+                    <input type="text" name="txt_nombres" placeholder="Ingresa tu nombre" required autofocus>
+                </div>
+                <div class="form-item">
+                    <span class="form-item-icon material-symbols-rounded">badge</span>
+                    <input type="text" name="txt_apellidos" placeholder="Ingresa tu apellido" required autofocus>
+                </div>
+                <div class="form-item">
+                    <span class="form-item-icon material-symbols-rounded">mail</span>
+                    <input type="email" name="txt_correo" placeholder="Ingresa tu correo" required autofocus>
+                </div>
+                <div class="form-item">
+                    <span class="form-item-icon material-symbols-rounded">keyboard</span>
+                    <input type="number" name="txy_telefono" placeholder="Ingresa tu número telefónico" required autofocus>
+                </div>
+                <div class="form-item">
+                    <span class="form-item-icon material-symbols-rounded">lock</span>
+                    <input type="password" name="txt_contrasena" placeholder="Ingresa tu contraseña" required autofocus>
+                </div>
                 <button type="submit" name="btnRegistrar" value="Registrar">Registrar</button>
-            </center>
-        </form>
+            </form>
+        </div>
     </body>
 </html>

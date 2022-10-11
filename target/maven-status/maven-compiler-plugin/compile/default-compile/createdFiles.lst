@@ -1,1 +1,4 @@
 parcial\parcialpoc\control.class
+parcial\parcialpoc\PersonaDTO.class
+parcial\parcialpoc\PersonaDAO.class
+parcial\parcialpoc\ConexionBD.class
