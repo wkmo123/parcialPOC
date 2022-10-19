@@ -75,7 +75,7 @@ public class control extends HttpServlet {
         String n = request.getParameter("txt_nombres");
         String a = request.getParameter("txt_apellidos");
         String c = request.getParameter("txt_correo");
-        String t = request.getParameter("txt_numero");
+        String t = request.getParameter("txt_telefono");
         try (PrintWriter out = response.getWriter()) {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
