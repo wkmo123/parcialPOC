@@ -1,5 +1,5 @@
 
-package parcial.parcialpoc;
+package Modelo;
 
 /**
  *
