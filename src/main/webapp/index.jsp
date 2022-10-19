@@ -33,7 +33,7 @@
                 </div>
                 <div class="form-item">
                     <span class="form-item-icon material-symbols-rounded">keyboard</span>
-                    <input type="number" name="txy_telefono" placeholder="Ingresa tu número telefónico" required autofocus>
+                    <input type="number" name="txt_telefono" placeholder="Ingresa tu número telefónico" required autofocus>
                 </div>
                 <div class="form-item">
                     <span class="form-item-icon material-symbols-rounded">lock</span>
