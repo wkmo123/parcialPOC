@@ -32,12 +32,12 @@ public class control extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
+        try ( PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet control</title>");            
+            out.println("<title>Servlet control</title>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet control at " + request.getContextPath() + "</h1>");
@@ -75,12 +75,14 @@ public class control extends HttpServlet {
         String n = request.getParameter("txt_nombres");
         String a = request.getParameter("txt_apellidos");
         String c = request.getParameter("txt_correo");
-        String t = request.getParameter("txt_numero");
-        try (PrintWriter out = response.getWriter()) {
+        String t = request.getParameter("txt_telefono");
+        String p = request.getParameter("txt_contrasena");
+        try ( PrintWriter out = response.getWriter()) {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
             out.println("<title>Servlet control</title>");
+            out.println("<link rel=\"stylesheet\" href=\"estilos.css\">");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet control at " + request.getContextPath() + "</h1>");
