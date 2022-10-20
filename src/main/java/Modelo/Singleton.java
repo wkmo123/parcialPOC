@@ -24,12 +24,13 @@ public class Singleton {
             Class.forName("org.postgresql.Driver");
             this.connection = DriverManager.getConnection(url, username, password);
         } catch (ClassNotFoundException ex) {
-            System.out.println("Database Connection Creation Failed : " + ex.getMessage());
+            System.out.println("La creacion de la base de datos ha fallado : " + ex.getMessage());
         }
     }
     public Connection getConnection() {
         return connection;
     }
+    
     public static Singleton getInstance() throws SQLException {
         if (instance == null) {
             instance = new Singleton();
