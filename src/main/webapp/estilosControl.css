@@ -22,9 +22,6 @@ body{
 
 }
 
-div{
-    border: solid 1px rgba(255,255,255,0.2);
-}
 table{
     color: #fff;
     font-size: 14px;
@@ -56,6 +53,11 @@ tr:hover {
     
 }
 
-caption{
-    border: transparent;
+.contenedor caption{
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.titulo{
+    
 }

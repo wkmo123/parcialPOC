@@ -84,11 +84,8 @@ public class control extends HttpServlet {
             out.println("<link rel=\"stylesheet\" href=\"estilosControl.css\">");
             out.println("</head>");
             out.println("<body>");
-            out.println("<div>");
-            out.println("<h1>Datos registrados</h1>");
-            out.println("</div>");
             out.println("</br>");
-            out.println("<div>");
+            out.println("<div class=\"contenedor\">");
             out.println("<table>");
             out.println("<caption>Datos registrados</caption>");
             out.println("<thead>");
