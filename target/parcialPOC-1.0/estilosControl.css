@@ -30,10 +30,11 @@ table{
     font-size: 14px;
     table-layout: fixed;
     border-collapse: collapse;
+    background-color: #16BAC5;
 }
 
 thead{
-    background: rgba(243,140,210,0.4);
+    background: #171D1C;
 }
 
 th{
@@ -51,6 +52,10 @@ tr{
     cursor: pointer;
 }
 tr:hover {
-    background: rgba(243,140,210,0.4); 
+    background: #1d3557; 
     
+}
+
+caption{
+    border: transparent;
 }
