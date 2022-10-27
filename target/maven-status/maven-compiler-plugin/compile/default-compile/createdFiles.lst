@@ -1,4 +1,5 @@
-parcial\parcialpoc\control.class
-parcial\parcialpoc\PersonaDTO.class
-parcial\parcialpoc\PersonaDAO.class
-parcial\parcialpoc\ConexionBD.class
+Modelo\PersonaDAO.class
+Modelo\Singleton.class
+Modelo\ConexionBD.class
+Control\control.class
+Modelo\PersonaDTO.class

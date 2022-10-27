@@ -5,8 +5,11 @@
  */
 package Control;
 
+import Modelo.PersonaDAO;
+import Modelo.PersonaDTO;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -107,6 +110,10 @@ public class control extends HttpServlet {
             out.println("</body>");
             out.println("</html>");
         }
+        PersonaDAO dao = new PersonaDAO();
+        List<PersonaDTO> Lista = dao.readAll();
+        for (PersonaDTO i : Lista)
+            System.out.println(i.toString());
     }
 
     /**
