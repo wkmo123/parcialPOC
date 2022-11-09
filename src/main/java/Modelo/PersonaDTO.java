@@ -16,22 +16,23 @@ public class PersonaDTO implements Serializable{
     private String nombre;
     private String apellido;
     private String correo;
+    private String telefono;
     private String clave;
-    private int telefono;
 
-    public PersonaDTO(String nombre, String apellido, String correo, String clave, int telefono) {
+    public PersonaDTO(String nombre, String apellido, String correo, String telefono, String clave) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.correo = correo;
-        this.clave = clave;
         this.telefono = telefono;
+        this.clave = clave;
     }
+
     public PersonaDTO() {
         this.nombre = "";
         this.apellido = "";
         this.correo = "";
+        this.telefono = "";
         this.clave = "";
-        this.telefono = 0;
     }
 
     public String getNombre() {
@@ -58,6 +59,14 @@ public class PersonaDTO implements Serializable{
         this.correo = correo;
     }
 
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
     public String getClave() {
         return clave;
     }
@@ -66,19 +75,11 @@ public class PersonaDTO implements Serializable{
         this.clave = clave;
     }
 
-    public int getTelefono() {
-        return telefono;
-    }
-
-    public void setTelefono(int telefono) {
-        this.telefono = telefono;
-    }
-
     @Override
     public String toString() {
-        return "PersonaDTO{" + "nombre=" + nombre + ", apellido=" + apellido + ", correo=" + correo + ", clave=" + clave + ", telefono=" + telefono + '}';
+        return "PersonaDTO{" + "nombre=" + nombre + ", apellido=" + apellido + ", correo=" + correo + ", telefono=" + telefono + ", clave=" + clave + '}';
     }
-
+    
     @Override
     public int hashCode() {
         int hash = 3;
@@ -86,7 +87,7 @@ public class PersonaDTO implements Serializable{
         hash = 97 * hash + Objects.hashCode(this.apellido);
         hash = 97 * hash + Objects.hashCode(this.correo);
         hash = 97 * hash + Objects.hashCode(this.clave);
-        hash = 97 * hash + this.telefono;
+        hash = 97 * hash + Objects.hashCode(this.telefono);
         return hash;
     }
 
@@ -102,9 +103,6 @@ public class PersonaDTO implements Serializable{
             return false;
         }
         final PersonaDTO other = (PersonaDTO) obj;
-        if (this.telefono != other.telefono) {
-            return false;
-        }
         if (!Objects.equals(this.nombre, other.nombre)) {
             return false;
         }
@@ -114,7 +112,9 @@ public class PersonaDTO implements Serializable{
         if (!Objects.equals(this.correo, other.correo)) {
             return false;
         }
+        if (!Objects.equals(this.telefono, other.telefono)) {
+            return false;
+        }
         return Objects.equals(this.clave, other.clave);
     }
-    
 }

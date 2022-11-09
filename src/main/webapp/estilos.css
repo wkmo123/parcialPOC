@@ -99,3 +99,12 @@ body{
     background-color: rgba(0,0,0,.85);
     cursor: pointer;
 }
+a{
+    text-decoration: none;
+    color: #35339a;
+    padding: 1rem 1.5rem;
+}
+
+a:hover{
+    text-decoration: underline;
+}
